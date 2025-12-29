@@ -10,7 +10,7 @@ function ToastProvider({ children }) {
   const [toasts, setToasts] = React.useState([])
 
   const handleCreateToast = (variant, message) => {
-    let uuid = self.crypto.randomUUID();
+    let uuid = crypto.randomUUID();
     const newToast = {
       "id": uuid,
       "variant": variant, 
